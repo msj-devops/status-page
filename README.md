@@ -34,3 +34,13 @@ python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 python3 healthcheck.py PLIK_Z_CELAMI.yaml --raport raport.json
 ```
+
+## CI
+
+Każdy Pull Request sprawdza workflow `CI` (`.github/workflows/ci.yml`): lintery (ruff, yamllint, hadolint, actionlint). Joby ruszają tylko dla zmienionych części, a job `CI OK` zbiera ich wyniki. Lintery lokalnie (w `healthcheck/`):
+
+```bash
+python3 -m venv .venv && . .venv/bin/activate
+pip install -r requirements-dev.txt
+ruff check .
+```
