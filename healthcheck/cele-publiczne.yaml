@@ -4,7 +4,7 @@ cele:
     oczekiwany_status: 200
   - url: https://github.com/msj-devops/status-page/blob/main/README.md
     oczekiwany_status: 200
-  - url: https://raw.githubusercontent.com/msj-devops/status-page/main/strona/html/index.html
+  - url: https://raw.githubusercontent.com/msj-devops/status-page/main/chart/status-page/files/html/index.html
     oczekiwany_status: 200
   - url: https://github.com/msj-devops/status-page/nie-ma-takiej-strony
     oczekiwany_status: 404
