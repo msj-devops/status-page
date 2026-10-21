@@ -13,6 +13,7 @@ Utrzymuje: **msj-devops**
 | `strona/nginx/` | konfiguracja nginx: panel za hasłem HTTP Basic |
 | `chart/status-page/` | chart Helm: strona, healthcheck co 5 minut i strona statusu |
 | `wdrozenia/dev/`, `wdrozenia/prod/` | wartości chartu dla środowisk |
+| `.github/workflows/` | workflow GitHub Actions |
 
 ## Jak uruchomić lokalnie
 
