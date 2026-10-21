@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "status-page.fullname" . }}-strona
+  labels:
+    {{- include "status-page.labels" . | nindent 4 }}
+    app.kubernetes.io/component: strona
+spec:
+  selector:
+    {{- include "status-page.selectorLabels" . | nindent 4 }}
+    app.kubernetes.io/component: strona
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
