@@ -1,4 +1,4 @@
-# Cele healthchecka w workflow test-strony.yml: strona z katalogu strona/ podana przez nginx na runnerze.
+# Cele healthchecka w workflow test-strony.yml: strona wyrenderowana z chartu (wartości dev) podana przez nginx na runnerze.
 cele:
   - url: http://localhost:8080/
     oczekiwany_status: 200
